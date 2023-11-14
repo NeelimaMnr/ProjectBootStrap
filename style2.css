@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+.next-to-header::after{
+    content: "";
+    clear:both;
+    display: block;
+}
+
+.header {
+    background-color: #9933cc;
+    /* color: #e73333; */
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+.left{
+    flex:1;
+    float: left;
+    width:100%;
+}
+.left-table{
+    margin:auto;
+    display:grid;
+    justify-content: center;
+    padding:1em;
+}
+.left,.left-table{
+    background:linear-gradient(90deg, #5a7e66 , #ed9c6d);
+}
+.right{
+    background:linear-gradient(90deg, #2193b0 , #d6cccc);
+    height: 368px;
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+.right-table{
+    padding:1em;
+    float: left;
+    /* width:100%; */
+}
+input,textarea{
+    /* width:70%; */
+    border-radius:0.5em;
+    /* margin:1em 0em 1em 1em; */
+}
+
+label{
+    width:70%;
+    /* border-radius:0.5em; */
+    margin:1em;
+}
+
+button{
+    border-radius: 0.5em;
+    display:flex;
+    width:fit-content;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #5a7e66;
+}
+table th, td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse; 
+    width:100%; 
+}
+
+@media only screen and (min-width: 300px) {
+    .left,.right,.header{
+      width:100%;
+    }
+    .right-table table {
+        border-collapse: collapse;
+        max-width: 100%; /* Set the max-width to adapt to the container width */
+    }
+
+
+  }
+
+@media only screen and (min-width:700px){
+    *{
+        box-sizing: border-box;
+    }
+    .left{
+        width:50%;   
+    }
+    .left::after{
+        content:'';
+        clear:right;
+      }
+      .right{
+        width:50%;
+        height: 400px;
+        background:linear-gradient(90deg, #2193b0 , #d6cccc);
+      }
+        .right-table {
+            padding: 1em;
+            float: left;
+            /* Remove the fixed width property */
+        }
+        .right-table table {
+            border-collapse: collapse;
+            max-width: 100%; /* Set the max-width to adapt to the container width */
+        }
+        
+      }
+
+.horizontal-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-pagination button {
+    margin: 5px;
+}
+

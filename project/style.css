@@ -1,0 +1,122 @@
+
+.flex-container {
+    display: flex;
+}
+.flex-item {
+    flex: 1; 
+}
+
+#pagination-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#pagination-container button,span{
+    font-size: 16px;
+}
+
+
+
+#pagination-container button{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    background-color: rgb(46, 129, 224);
+}
+
+#left {
+        background-color: lightyellow;
+        padding: 20px;
+        float: left;
+        width: 50%;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+}
+
+
+#right {
+    background-color: lightblue;
+    padding: 20px;
+    float: left;
+    width: 50%; 
+    max-width: 100%; 
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+form textarea, form input[type="text"] {
+    width: 80%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 40px;;
+}
+
+/* form input[type="checkbox"] {
+    position: relative;
+    top:20px;
+    
+} */
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0px 20px 0px 50px;
+    border-radius: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+table button {
+    padding: 5px 10px;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table button.update {
+    background-color: #007BFF;
+}
+
+@media (max-width: 768px) {
+    body{
+        padding: 0%;
+        margin: 0%;
+        overflow-x: hidden;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+
+    #left,
+    #right {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="bigcontainer"> -->
+    <div class="header">Heading2</div>
+    <div class="next-to-header">
+        <div class="container left">
+            <div class="left-table" >
+
+                <h4 style="text-align: center;">UI Form for View and Update</h4>
+                
+                <input type="hidden" id="updateId">
+                <label>ID:<input type="number" id="id"></label>
+
+                <label>User ID:<input type="text" id="userid"></label>
+
+                <label>Title:<textarea id="title" rows="1"></textarea></label>
+                <label>Completed:<input type="checkbox" id="completed"></label>
+
+                <button type="submit" id="submitButton">Submit</button>
+            </div>
+        </div>
+
+
+        <div class="container right">
+            <div class="right-table">
+            
+                <table cellpadding="0" class="tabledata1">
+                    <caption><b>My Data Table</b></caption>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>User ID</th>
+                        <th>Title</th>
+                        <th>Completed</th>
+                        <th class="action">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+                </table>
+                
+            </div>
+            <div id="pagination" class="horizontal-pagination">
+                <button id="prevPage">Previous</button>
+                <span id="currentPage">1</span>
+                <button id="nextPage">Next</button>
+            </div>
+        
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
